@@ -1,0 +1,37 @@
+main
+{
+	int prime[100];
+	int i;
+	int x;
+	int n;
+	i=0;
+	n=100;
+	while (i<n)
+	{
+		prime[i]=i;
+		i=i+1;
+	}
+	x=2;
+	while(x<n)
+	{
+		i=2;
+		while(i*x<n)
+		{
+			if(prime[x])
+			{
+				prime[i*x]=0;
+			}
+			i++;
+		}
+		x=x+1;
+	}
+	i=2;
+	while(i<n)
+	{
+		if(prime[i])
+		{
+			write prime[i];
+		}
+		++i;	
+	}
+}

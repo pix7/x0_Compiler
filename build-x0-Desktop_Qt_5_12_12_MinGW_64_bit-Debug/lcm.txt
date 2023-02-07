@@ -1,0 +1,19 @@
+main
+{
+  int a;int b;  
+  int x;
+  int y;
+  int z;
+  read a;
+  read b;
+  x = a;
+  y = b;
+  while(y)
+  {
+     z = x % y;
+     x = y;
+     y = z;
+  }
+  write a*b/x;
+
+}
